@@ -1,0 +1,46 @@
+.login_photo{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 100px;
+   
+}
+
+
+
+/*.greet{
+    color: blue;
+    text-align: center;
+}
+*/
+.log_button{
+    position: relative;
+    bottom: 560px;
+    left: 890px ;
+    width: 120px;
+    height: 60px;
+    
+    background-color: rgba(0,114,225,255);
+    color:white
+}
+
+.log_button:hover{
+    opacity: 0.7;
+}
+
+hr{
+  position: relative;
+  bottom: 20px;
+  
+}
+
+body{
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
