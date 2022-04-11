@@ -248,6 +248,7 @@ input[type=text], input[type=password] {
   }
 
 .log_button{
+    margin-top: 10px;
     width: 100%;
     height: 40px;
     border-color: black;
@@ -258,4 +259,7 @@ input[type=text], input[type=password] {
 
 .log_button:hover{
     background-color: rgba(0,0,0,.5);
+}
+.avatar{
+    padding-top: 10px;
 }
