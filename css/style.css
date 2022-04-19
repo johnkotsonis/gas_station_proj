@@ -120,7 +120,7 @@
     #drawer-toggle:checked ~ #drawer-toggle-label { 
     height: 1000px; 
     width: calc(100% - 300px); 
-    background: rgba(255,255,255,.2); 
+    background: rgba(0, 0, 0, 0.2); 
     } 
     
     #drawer-toggle:checked ~ #drawer-toggle-label, 
@@ -254,6 +254,8 @@ input[type=text], input[type=password] {
     border-color: black;
     background-color: black;
     color: white;
+    transition-delay: 0.2s;
+    cursor:pointer;
 
 }
 
