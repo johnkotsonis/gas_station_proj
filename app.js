@@ -5,7 +5,7 @@ const path = require('path');
 
 dotenv.config({ path: './.env' })
 
-
+//defining db
 const app = express();
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -15,13 +15,13 @@ const db = mysql.createConnection({
 
 });
 
-
+//create public folder
 const publicDirectory = path.join(__dirname,'./public')
 app.use(express.static(publicDirectory))
 
 app.set('view engine','hbs');
 
-
+//db connection msg
 db.connect( (error)=>{
     if(error){
         console.log(error)
@@ -30,18 +30,11 @@ db.connect( (error)=>{
     }
     
 })
+//routes
+app.use('/', require('./routes/pages'))
 
 
-app.get("/", (req,res)=>{
-    // res.send("<h1>test<h1>")
-    res.render("index")
-});
 
-app.get("/register", (req,res)=>{
-    // res.send("<h1>test<h1>")
-    console.log("dasda")
-    res.render("register")
-});
 
 app.listen(420  ,()=>{
     console.log("testtt")
