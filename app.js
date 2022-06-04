@@ -37,11 +37,12 @@ app.get("/", (req,res)=>{
     res.render("index")
 });
 
-app.get("/login", (req,res)=>{
+app.get("/register", (req,res)=>{
     // res.send("<h1>test<h1>")
-    res.render("login")
+    console.log("dasda")
+    res.render("register")
 });
 
-app.listen(5000,()=>{
+app.listen(420  ,()=>{
     console.log("testtt")
 })
