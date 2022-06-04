@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Station</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<!-- gyugyhuyhu8yhui -->
+
+<body class="first_body">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+      <header>Gas Station</header>   
+    <nav id="drawer">
+       <ul>
+          <li><a href="javascript:alterbox()" >Employees</a></li>
+          <li><a href="javascript:alterbox()">Gas Station</a></li>
+          <li><a href="javascript:alterbox()">Careers</a></li>
+          <li><a href="javascript:alterbox()">Contact</a></li>
+          <li><a href="register">Log in</a></li>
+       </ul>
+    </nav>
+    <!-- <hr class="intro_hr"> -->
+    <a href="index.html"><img src="/logo_pupm.png" class="top_logo"></a>
+    <img src="/station_image.png" class="login_photo">
+    <!-- <button type="button" class="log_button" onclick="log_button()">Login</button>
+    <script type="text/javascript" src="/js/script.js"></script> -->
+
+    <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+      
+<script>
+// function Darkmode() {
+//    var element = document.body;
+//    element.classList.toggle("dark-mode");
+// }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function popwindowlog(){
+  floatingwindow= window.open("/pages/login.html","","height=500,width=500,scrollbars=no")
+
+
+}
+function alterbox(){
+  alert("Please log in")
+}
+</script>
+
+
+
+</body>
+
+
+</html>
