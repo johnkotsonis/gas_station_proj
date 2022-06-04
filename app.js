@@ -37,9 +37,9 @@ app.get("/", (req,res)=>{
     res.render("index")
 });
 
-app.get("/register", (req,res)=>{
+app.get("/login", (req,res)=>{
     // res.send("<h1>test<h1>")
-    res.render("register")
+    res.render("login")
 });
 
 app.listen(5000,()=>{
