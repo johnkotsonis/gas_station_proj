@@ -2,3 +2,5 @@
 An application for a gas station
 
 #HOW TO RUN
+
+on terminal run ``nmp start``
