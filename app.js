@@ -19,6 +19,11 @@ const db = mysql.createConnection({
 const publicDirectory = path.join(__dirname,'./public')
 app.use(express.static(publicDirectory))
 
+//grabing data as json
+app.use(express.urlencoded({extended:false}))
+app.use(express.json());
+
+//templates
 app.set('view engine','hbs');
 
 //db connection msg
