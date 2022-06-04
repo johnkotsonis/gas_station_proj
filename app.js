@@ -23,6 +23,8 @@ app.use(express.static(publicDirectory))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
+
+
 //templates
 app.set('view engine','hbs');
 
@@ -41,6 +43,6 @@ app.use('/', require('./routes/pages'))
 app.use("/auth", require('./routes/auth'))
 
 
-app.listen(1234  ,()=>{
+app.listen(5000  ,()=>{
     console.log("testtt")
 })
