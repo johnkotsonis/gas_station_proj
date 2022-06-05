@@ -18,11 +18,11 @@
       <header>Gas Station</header>   
     <nav id="drawer">
        <ul>
-          <li><a href="moves" >Κινήσεις πρατηρίου</a></li>
-          <li><a href="javascript:alterbox()">Δεξαμενές</a></li>
-          <li><a href="javascript:alterbox()">Υπάλληλοι</a></li>
+          <li><a href="javascript:alterbox()" >Employees</a></li>
+          <li><a href="javascript:alterbox()">Gas Station</a></li>
+          <li><a href="javascript:alterbox()">Careers</a></li>
           <li><a href="javascript:alterbox()">Contact</a></li>
-          <li><a href="login">Σύνδεση</a></li>
+          <li><a href="login">Log in</a></li>
        </ul>
     </nav>
     <!-- <hr class="intro_hr"> -->
@@ -47,8 +47,9 @@ function closeNav() {
 }
 function popwindowlog(){
   floatingwindow= window.open("/pages/login.html","","height=500,width=500,scrollbars=no")
-}
 
+
+}
 function alterbox(){
   alert("Please log in")
 }

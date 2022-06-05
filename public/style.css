@@ -196,16 +196,6 @@ hr{
     color: white;
   }
 
-  span[data-task-id] {
-	cursor: pointer;
-	text-decoration: none;
-}
-
-span[data-task-id].task-status-inactive {
-    text-decoration: line-through;
-}
-
-
 
 .top_logo{
     position: relative;

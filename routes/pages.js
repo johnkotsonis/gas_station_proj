@@ -10,10 +10,4 @@ router.get('/login', (req,res)=>{
     res.render('login');
 })
 
-
-
-router.get('/moves', (req,res)=>{
-    res.render('moves');
-})
-
 module.exports = router;
