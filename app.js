@@ -27,19 +27,23 @@ app.use(express.json());
 app.set('view engine','hbs');
 
 //db connection msg
-db.connect( (error)=>{
-    if(error){
-        console.log(error)
-    }else{
-        console.log("MySQL connected...")
-    }
-    
-})
+
+db.connect(function(err) {
+    if (err) throw err;
+    //Select all customers and return the result object:
+    db.query("SELECT * FROM user", function (err, result, fields) {
+      if (err) throw err;
+      console.log(result);
+    });
+});
+  
+
 //routes
 app.use('/', require('./routes/pages'))
 
 app.use("/auth", require('./routes/auth'))
 
+app.use("/auth/pumps",require('./routes/auth'))
 
 app.listen(5000  ,()=>{
     console.log("testtt")

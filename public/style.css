@@ -265,3 +265,7 @@ input[type=text], input[type=password] {
 .avatar{
     padding-top: 10px;
 }
+.grid-container {
+    display: grid;
+    grid-template: 150px / auto auto auto auto;
+  }

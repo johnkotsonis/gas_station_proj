@@ -19,9 +19,9 @@
     <nav id="drawer">
        <ul>
           <li><a href="javascript:alterbox()" >Κινήσεις πρατηρίου</a></li>
-          <li><a href="javascript:alterbox()">Δεξαμενές καυσίμων</a></li>
+          <li><a href="javascript:popwindowlog()">Δεξαμενές καυσίμων</a></li>
           <li><a href="javascript:alterbox()">Υπάλληλοι</a></li>
-          <li><a href="login">Log in</a></li>
+          <li><a href="index">Log out</a></li>
        </ul>
     </nav>
     <!-- <hr class="intro_hr"> -->
@@ -44,7 +44,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
+function popwindowlog(){
+  floatingwindow= window.open("pumps","","height=500,width=1000,scrollbars=no")
+}
 function alterbox(){
   alert("Please log in")
 }
