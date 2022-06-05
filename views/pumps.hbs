@@ -12,13 +12,47 @@
 
 <body>
     
-<div class="grid-container">
-<div class="pump1">1</div>
-  <div class="pump2">2</div>
-  <div class="pump3">3</div>  
-  <div class="pump4">4</div>
+<div class='some-page-wrapper'>
+  <div class='row'>
+    <div class='column'>
+      <div class='box'>
+        <p class="pumpLablel">fuel A</p>  
+        <div class="pumpA" id="pumpA" ></div>   
+        <button type="button" class="refiller" onclick="refiller()">refill pump</button>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='box'>
+        <p class="pumpLablel">fuel B</p>     
+        <div class="pumpB" id="pumpB"></div>
+
+        <button type="button" class="refiller" onclick="refiller2()">refill pump</button>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  function refiller(){
+    console.log()
+    let temp= document.getElementById("pumpA")
+    temp.classList.remove("pumpA");
+    temp.classList.add("refill");
+
+  }
+  function refiller2(){
+    console.log()
+    let temp= document.getElementById("pumpB")
+    temp.classList.remove("pumpB");
+    temp.classList.add("refill");
+
+  }
+</script>
+
+
+
+
 </div>
-
-
 </body>
 </html>

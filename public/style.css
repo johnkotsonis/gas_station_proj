@@ -269,3 +269,101 @@ input[type=text], input[type=password] {
     display: grid;
     grid-template: 150px / auto auto auto auto;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .some-page-wrapper {
+    margin: 15px;
+   
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .box{
+    border-style: solid;
+    border-color: black;
+    height: 250px;
+  }
+  
+ 
+.refiller{
+    position: relative;
+    top: 60px;
+    left: 200px;
+    width: 100px;
+    height: 20px;
+    margin: 0%;
+}
+
+.pumpLablel{
+    position:relative;
+    left: 230px
+}
+
+/* .box{
+    background: linear-gradient(to top, red 50%,white 0%);
+} */
+
+
+.pumpA{
+    position: relative;
+    left: 215px;
+    top: 30px;
+    height: 130px;
+    width: 70px;
+    background: linear-gradient(to top, gray 25%,white 0%);
+    border-style: solid;
+    border-color: black;
+  }
+.pumpB{
+    position: relative;
+    left: 215px;
+    top: 30px;
+    height: 130px;
+    width: 70px;
+    background: linear-gradient(to top, gray 50%,white 0%);
+    border-style: solid;
+    border-color: black;
+  }
+
+.refill{
+    position: relative;
+    left: 215px;
+    top: 30px;
+    height: 130px;
+    width: 70px;
+    background: gray;
+    border-style: solid;
+    border-color: black;
+
+}
+
+/* .pumpB{
+    height: 100px;
+    width: 70px;
+    background-color:gray;
+    
+} */
